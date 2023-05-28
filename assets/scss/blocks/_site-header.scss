@@ -7,8 +7,12 @@
   @include flex-center(space-between);
 }
 
+.site-logo{
+   color: $color-primary-grayish-dark-blue;
+}
 .site-logo:hover {
   opacity: 0.7;
+ 
 }
 
 .site-logo__img {

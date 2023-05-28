@@ -532,6 +532,10 @@ img {
   gap: 30px;
 }
 
+.site-logo {
+  color: #33323D;
+}
+
 .site-logo:hover {
   opacity: 0.7;
 }
