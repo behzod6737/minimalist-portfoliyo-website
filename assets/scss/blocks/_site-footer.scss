@@ -1,0 +1,59 @@
+.site-footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: $color-primary-grayish-dark-blue;
+
+}
+
+.site-footer__container {
+    @include flex-center(space-between,$gap:0)
+}
+
+.site-footer__logo {
+    color: white;
+}
+
+.site-logo__img--bright{
+    color: white;
+}
+
+
+.site-footer__nav {
+}
+
+.site-nav__item-link--footer{
+    color: white;
+}
+
+.site-footer__links {
+    @include flex-center($gap:15px);
+
+}
+
+.site-footer__link {
+    color: white;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.site-nav__list--footer{
+
+}
+
+// RESPONSIVE
+
+@include breakpoint-down(655px){
+    .site-footer__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .site-nav__list--footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

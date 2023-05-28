@@ -1,0 +1,38 @@
+.interested-section {
+  padding-top: 160px;
+}
+.interested__container {
+  @include flex-center(space-between);
+}
+.interested__title {
+  max-width: 350px;
+  width: 100%;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+}
+
+
+// RESPONSIVE
+
+@include breakpoint-down(650px){
+  .interested-section{
+    padding-top: 80px;
+  }
+  .interested__container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@include breakpoint-down(380px){
+  .interested__title{
+    text-align: center;
+    font-size: 32px;
+  }
+}
