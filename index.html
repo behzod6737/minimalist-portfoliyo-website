@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title></title>
+  <title>minimalist</title>
 </head>
-<body>
 
+<body>
+  <header class="site-header ">
+    <!-- site-header--active yaratildi burger uchun -->
+    <div class="site-header__container container">
+      <a class="site-logo site-header__logo" href="index.html">
+        <img class="site-logo__img" src="/assets/images/logo.svg" alt="logo" width="60px" height="32px">
+      </a>
+      <button class="site-header__nav-toggler js-nav-toggler" aria-label="navigation toggler">
+      </button>
+
+      <nav class="site-header__nav site-nav site-nav--header ">
+        <!-- nega site-header__nav qoshdik cunki u bizaga vikluchatel vazifasini 
+        bajaradi lekn ozi keremas cunki hama iwi site-nav--header bajarvoti u 
+      bizaga uwa navigation ciqiwini taminlab bervoti -->
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__item-link site-nav__item-link--active " href="#">HOME</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link" href="#">PORTFOLIO</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link" href="#">CONTACT ME</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <script src="/assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,56 @@
+.site-btn-primary {
+  display: block;
+  width: fit-content;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 25px;
+  font-family: $font-secondary;
+  @include a(white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #203a4c;
+
+  &::before {
+    content: "";
+    background-image: url("/assets/images/down-link.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    padding: 16px 24px;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    background-color: $color-primary-greenish;
+    @include transition;
+  }
+
+  &:hover::before {
+    background-color: #55a292;
+    @include transition;
+  }
+}
+
+.site-secondary-btn {
+  width: fit-content;
+  padding: 17px 32px;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include a($color-primary-grayish-dark-blue);
+  background-color: #F2F2F2;
+  border: 1px solid #33323d;
+
+    &:hover{
+      color: #fafafa;
+      background-color: $color-primary-grayish-dark-blue;
+      @include transition;
+    }
+}
