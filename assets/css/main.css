@@ -611,6 +611,7 @@ img {
     right: 20px;
     padding: 40px 5px;
     background-color: #33323D;
+    animation: scale-out-hor-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
   }
   .site-nav--header .site-nav__list {
     flex-direction: column;
@@ -623,6 +624,18 @@ img {
   }
   .site-nav__item-link--active {
     color: white;
+  }
+}
+@keyframes scale-out-hor-right {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
 .site-main {
